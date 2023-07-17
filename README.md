@@ -3,8 +3,8 @@ This is the official code repository for "EGE-UNet: an Efficient Group Enhanced 
 
 **0. Main Environments**
 - python 3.8
-- pytorch 1.8.0
-- torchvision 0.9.0
+- [pytorch 1.8.0](https://download.pytorch.org/whl/cu111/torch-1.8.0%2Bcu111-cp38-cp38-win_amd64.whl)
+- [torchvision 0.9.0](https://download.pytorch.org/whl/cu111/torchvision-0.9.0%2Bcu111-cp38-cp38-linux_x86_64.whl)
 
 **1. Prepare the dataset.**
 
