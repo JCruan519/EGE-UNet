@@ -10,6 +10,8 @@ class NPY_datasets(Dataset):
         if train:
             images_list = os.listdir(path_Data+'train/images/')
             masks_list = os.listdir(path_Data+'train/masks/')
+            images_list = sorted(images_list)
+            masks_list = sorted(masks_list)
             self.data = []
             for i in range(len(images_list)):
                 img_path = path_Data+'train/images/' + images_list[i]
@@ -19,6 +21,8 @@ class NPY_datasets(Dataset):
         else:
             images_list = os.listdir(path_Data+'val/images/')
             masks_list = os.listdir(path_Data+'val/masks/')
+            images_list = sorted(images_list)
+            masks_list = sorted(masks_list)
             self.data = []
             for i in range(len(images_list)):
                 img_path = path_Data+'val/images/' + images_list[i]
